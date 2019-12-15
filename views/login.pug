@@ -1,0 +1,60 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible" content="ie=edge")
+    link(rel="stylesheet" href="stylesheets/bootstrap.min.css")
+    link(rel="stylesheet" href="stylesheets/admin.css")
+    style.
+      .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      }
+      @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+      }
+      }
+      /* Sign in button */
+      .btn-primary-btn {
+      color: #fff;
+      background-color: #0069d9;
+      border-color: #0062cc;
+      }
+      .btn-primary-btn:hover {
+      color: #fff;
+      background-color: #0069d9;
+      border-color: #0062cc;
+      }
+    title Login
+  body(onload="document.registration.userName.focus()")
+    .container
+      .row.no-gutter
+        // left side  containing image
+        .d-none.d-md-flex.col-md-4.col-lg-6.bg-image
+        // right side containing login
+        .col-md-8.col-lg-6
+          form.form-signin(name="registration")
+            .text-center.mb-4
+              img.mb-4(src="images/f.jpg" alt="" width="72" height="72")
+              h1.h3.mb-3.font-weight-normal Junior Baby Center
+              p Caring babysitters for your kids
+            .form-label-group
+              input#inputUserName.form-control(type="email" placeholder="User name" name="adminUserName" required="")
+              label(for="inputUserName") Username
+            .form-label-group
+              input#inputPassword.form-control(type="password" placeholder="Password" name="adminUserPassword" required="")
+              label(for="inputPassword") Password
+            .checkbox.mb-3
+              label
+                input(type="checkbox" value="remember-me")
+                |  Remember me
+            button.btn.btn-lg.btn-primary-btn.btn-block(type="submit") Sign in
+            p.mt-5.mb-3.text-muted.text-center © JBC
+    script(scr="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.js").
+    script(src="js/bootstrap.bundle.min.js")

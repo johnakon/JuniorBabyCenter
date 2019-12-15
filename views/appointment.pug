@@ -1,0 +1,114 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible" content="ie=edge")
+    link(rel="stylesheet" href="stylesheets/bootstrap.min.css")
+    link(rel="stylesheet" href="stylesheets/admin.css")
+    style.
+      .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      }
+      @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+      }
+      }
+      .my-success-btn {
+      color: #fff;
+      background-color: #218838;
+      border-color: #1e7e34;
+      }
+      .my-success-btn:hover {
+      color: #fff;
+      background-color: #218838;
+      border-color: #1e7e34;
+      }
+      /* logout button */
+      .my-cancel-btn {
+      color: #fff;
+      background-color: #0069d9;
+      border-color: #0062cc;
+      }
+      .my-cancel-btn:hover {
+      color: #fff;
+      background-color: #0069d9;
+      border-color: #0062cc;
+      }
+      .btn-danger {
+      color: #fff;
+      background-color: #c82333;
+      border-color: #bd2130;
+      }
+      .btn-danger:hover {
+      color: #fff;
+      background-color: #c82333;
+      border-color: #bd2130;
+      }
+    // Custom styles for this template
+    link(href="floating-labels.css" rel="stylesheet")
+  body(onload="document.appointment.parentsName.focus()")
+    .container.panel.panel-primary
+      br
+      br
+      .border
+        .panel-body
+          .container
+            .row
+              .col-md-12.mx-auto
+                .container
+                  form(name="appointment")
+                    br
+                    .text-center.mb-4
+                      img.mb-4(src="../images/f.jpg" alt="" width="72" height="72")
+                      p(style="font-size: 20px; color: teal; text-decoration: underline;")
+                        | Junior Baby
+                        | Center Appointment Form
+                    hr
+                    .form-group.row
+                      .col-sm-6
+                        label(for="inputFirstname") Parent's name
+                        input#inputFirstname.form-control(type="text" name="parentsName" placeholder="Prent's name")
+                      .col-sm-6
+                        label(for="inputLastname") Child's name
+                        input#inputLastname.form-control(type="text" placeholder="Child's name")
+                    .form-group.row
+                      .col-sm-6
+                        label(for="inputAddressLine1") Address
+                        input#inputAddressLine1.form-control(type="text" placeholder="Street Address")
+                      .col-sm-6
+                        label(for="inputAddressLine2") Customer id
+                        input#inputAddressLine2.form-control(type="text" placeholder="Customer's id")
+                    .form-group.row
+                      .col-sm-6
+                        label(for="inputCity") Club requested
+                        input#inputCity.form-control(type="text" placeholder="Club requested")
+                      .col-sm-3
+                        label(for="inputSitter") Sitter
+                        input#inputState.form-control(type="text" placeholder="Sitter")
+                      .col-sm-3
+                        label(for="inputPostalCode") Fee
+                        input#inputPostalCode.form-control(type="text" placeholder="Fee")
+                    .form-group.row
+                      .col-sm-6
+                        label(for="inputContactNumber") Contact Number
+                        input#inputContactNumber.form-control(type="number" placeholder="Contact Number")
+                      .col-sm-6
+                        label(for="inputTime") Time
+                        input#inputTime.form-control(type="text" placeholder="Time")
+                    br
+                    .row
+                      .col
+                        button.btn.btn-md.my-success-btn.btn-block(type="submit")
+                          | Add
+                          | user
+                      .col
+                        button.btn.btn-md.my-cancel-btn.btn-block(type="submit") Cancel
+                      .col
+                        button.btn.btn-md.btn-danger.btn-block(type="submit") Reset
+                  br
+      br
+      script(scr="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.js").
+      script(src="js/bootstrap.bundle.min.js")

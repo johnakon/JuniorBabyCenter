@@ -1,0 +1,72 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible" content="ie=edge")
+    link(rel="stylesheet" href="stylesheets/bootstrap.min.css")
+    link(rel="stylesheet" href="stylesheets/admin.css")
+    style.
+      .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      }
+      @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+      }
+      }
+      .my-success-btn {
+      color: #fff;
+      background-color: #218838;
+      border-color: #1e7e34;
+      }
+      .my-success-btn:hover {
+      color: #fff;
+      background-color: #218838;
+      border-color: #1e7e34;
+      }
+      .my-primary-btn {
+      color: #fff;
+      background-color: #0069d9;
+      border-color: #0062cc;
+      }
+      .my-primary-btn:hover {
+      color: #fff;
+      background-color: #0069d9;
+      border-color: #0062cc;
+      }
+    link(href="floating-labels.css" rel="stylesheet")
+  body
+    form.form-signin
+      .text-center.mb-4
+        img.mb-4(src="images/f.jpg" alt="" width="72" height="72")
+        h1.h3.mb-3.font-weight-normal(style="font-size: 40px; font-family: Verdana, Geneva, Tahoma, sans-serif; color: teal;") JBC
+        p(style="font-size: 20px; color: teal; text-decoration: underline;") Junior Baby Center Control Platform
+      .panel.panel-primary
+        .panel-heading
+          h3.panel-title.text-center(style="color: teal;") Admin use only!
+        .border
+          .panel-body
+            span.border
+              .container
+                .row
+                  .col
+                    button.btn.btn-lg.my-success-btn.btn-block(type="submit") Dashboard
+                  .col
+                    button.btn.btn-lg.my-success-btn.btn-block(type="submit") Appointments
+                br
+                .row
+                  .col
+                    button.btn.btn-lg.my-success-btn.btn-block(type="submit")
+                      | Sitter
+                      | portal
+                  .col
+                    button.btn.btn-lg.my-success-btn.btn-block(type="submit")
+                      | Register
+                      | user
+      br
+      button.btn.btn-lg.my-primary-btn.btn-block(type="submit" onclick="location.href='login.html'") Logout
+      p.mt-5.mb-3.text-muted.text-center © JBC
+    script(scr="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.js").
+    script(src="js/bootstrap.bundle.min.js")

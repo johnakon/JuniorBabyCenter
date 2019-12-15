@@ -1,0 +1,199 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible" content="ie=edge")
+    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css")
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js")
+    script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js")
+    link(rel="stylesheet" href="stylesheets/bootstrap.css")
+    link(rel="stylesheet" href="stylesheets/bootstrap-dropdownhover.min.css")
+    link(rel="stylesheet" href="stylesheets/styles.css")
+    title #{title}
+  body
+    // Navigation
+    nav.navbar.navbar-expand-lg.navbar-light.bg-nav.fixed-top
+      .container
+        // <span><img src="images/3.jpg" alt="" style="height: 23px;"></span>
+        a.navbar-brand(href="index" style="color: teal;")
+          strong Junior Baby Center
+        button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation")
+          span.navbar-toggler-icon
+        .container
+          a.nav-link(href="" style="font-size:15px; color: green;")
+            i.fa.fa-phone
+            b +256753613293
+        #navbarResponsive.collapse.navbar-collapse.nav-tabs
+          ul.navbar-nav.ml-auto
+            // <li class="nav-item">+256753613293</li>
+            li.nav-item
+              a.nav-link.ba(href="index" style="font-size: 17px; color: teal;")
+                b Home
+                // <span class="sr-only">(current)</span>
+            li.nav-item
+              a.nav-link(href="about" style="font-size: 17px; color: teal;")
+                b  About
+          
+            li.nav-item
+              a.nav-link(href="parents" style="font-size: 17px; color: teal;")
+                b Parents
+            li.nav-item
+              a.nav-link(href="babysitter" style="font-size: 17px; color: teal;")
+                b Babysitters
+            li.nav-item
+              a.nav-link.active(href="register" style="font-size: 17px; color: green;")
+                b Register
+              
+        // main content of the body goes here
+        br
+      
+    .container
+      br
+      .py-5.text-center
+        img.d-block.mx-auto.mb-4(src="images/f.jpg" alt="" width="72" height="72")
+        h2 Registration as a baby sitter
+
+
+      .border
+          .panel-body
+              .container
+          
+                .row
+                  .col-md-12.order-md-1
+                      form.needs-validation(novalidate="" method="POST" action="/register")
+                        .row
+                          .col-md-6.mb-3
+                            label(for="firstName") 
+                              |First name
+                              span.star  *
+                              small.muted-text  (please input your first name)
+                            input#firstName.form-control(type="text" placeholder="" value="" name="firstname" required="")
+                            .invalid-feedback
+                              | Valid first name is required.
+                          .col-md-6.mb-3
+                            label(for="lastName") 
+                              |Last name
+                              span.star  *
+                              small.muted-text  (please input your last name)
+                            input#lastName.form-control(type="text" placeholder="" value="" name="lastname" required="")
+                            .invalid-feedback
+                              | Valid last name is required.
+                        .mb-3
+                          label(for="email")
+                            | Email 
+                            //- span.text-muted (Optional)
+                            span.star  *
+                            small.muted-text  (please input your working email)
+                          input#email.form-control(type="email" placeholder="you@example.com" name="email" required="")
+                          .invalid-feedback
+                            | Please enter a valid email address for shipping updates.
+                        .mb-3
+                          label(for="address") 
+                            |Address
+                            span.star  *
+                            small.muted-text  (please input your current address)
+                          input#address.form-control(type="text" placeholder="1234 Le Palm Muyenga" name="address" required="")
+                          .invalid-feedback
+                            | Please enter your current address. of residence
+                        //- .mb-3
+                        //-   label(for="address2")
+                        //-     | Address 2 
+                        //-     span.text-muted (Optional)
+                        //-   input#address2.form-control(type="text" placeholder="Apartment or suite" required="")
+                        .row
+                          .col-md-5.mb-3
+                            label(for="district") 
+                              |District
+                              span.star  *
+                              small.muted-text  (please select your city)
+                            select#country.custom-select.d-block.w-100(required="" name="district")
+                              option(value="") Choose...
+                              option(value="Kampala") Kampala
+                              option(value="Entebbe") Entebbe
+                              option(value="Mbarara") Mbarara
+                              option(value="Wakiso") Wakiso
+                              option(value="Gulu") Gulu
+                              option(value="Soroti") Soroti
+                              option(value="Ngora") Ngora
+                            .invalid-feedback
+                              | Please select a valid district.
+                          .col-md-4.mb-3
+                              label(for="dob").Reg 
+                                |Childs Date of Birth
+                                span.star *
+                                small.muted-text (month/date/year)
+                              input#exampleInputDOB1.form-control(type='date', placeholder='Date of Birth' name="dob" required="")
+                              .invalid-feedback
+                                  | Please enter date of birth.
+                          .col-md-3.mb-3
+                            label(for="telephone") Telephone Number
+                              span.star  *
+                              small.muted-text  (telephone no.)
+                            input#zip.form-control(type="text" placeholder="" name="telno" required="")
+                            .invalid-feedback
+                              | Telephone number required.
+                        br
+                        h4(style="color: teal;") Please fill in more information about you below.
+                        .mb-3
+                          label(for="babysittingduration")
+                            | How long have you been baby sitting,
+                            //- span.text-muted (Optional)
+                            span.star  *
+                            small.muted-text  (Do you have experience caring for children of [X] age)
+                          input#duration.form-control(type="text" placeholder="" name="duration" required="")
+                          .invalid-feedback
+                            | This field cannot be left empty
+                        .mb-3
+                          label(for="availability") 
+                            |How available are you?
+                            span.star  *
+                            small.muted-text  (e.g can you be available on short notice)
+                          input#availability.form-control(type="text" placeholder="" name="availability" required="")
+                          .invalid-feedback
+                            | This field cannot be left empty
+                        .mb-3
+                          label(for="behavior")
+                            | Behavior issues
+                            //- span.text-muted (Optional)
+                            span.star  *
+                            small.muted-text  (How do you typically deal with behavior issues?)
+                          input#behavior.form-control(type="text" placeholder="" name="behavior" required="")
+                          .invalid-feedback
+                            | This field cannot be left empty.
+                        .mb-3
+                          label(for="club") 
+                            |Club
+                            span.star  *
+                            small.muted-text  ( Morning / Afternoon / Evening / Night and briefly why)
+                          input#club.form-control(type="text" placeholder="" name="preferedClub" required="")
+                          .invalid-feedback
+                            | This field cannot be left empty
+                        .mb-3
+                          label(for="activities") 
+                            |Activities
+                            span.star  *
+                            small.muted-text  (What activities do you like to do with kids?)
+                          input#activities.form-control(type="text" placeholder="" name="activities" required="")
+                          .invalid-feedback
+                            | This field cannot be left empty
+                        
+                        
+                        hr.mb-4
+                        button.btn.btn-primary.btn-lg.container(type="submit") Complete registration
+      footer.my-5.pt-5.text-muted.text-center.text-small
+        p.mb-1 © 2017-2019 JBC
+        ul.list-inline
+          li.list-inline-item
+            a(href="#") Privacy
+          li.list-inline-item
+            a(href="#") Terms
+          li.list-inline-item
+            a(href="#") Support
+
+    script(src="https://code.jquery.com/jquery-3.4.1.slim.min.js")
+    script.
+      window.jQuery || document.write('<script src="/docs/4.4/assets/js/vendor/jquery.slim.min.js"><\\/script>')
+    script(src="js/bootstrap.bundle.min.js" )
+    script(src="js/form-validation.js")

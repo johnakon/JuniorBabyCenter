@@ -1,0 +1,264 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible" content="ie=edge")
+    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css")
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js")
+    script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js")
+    link(rel="stylesheet" href="stylesheets/bootstrap.css")
+    link(rel="stylesheet" href="stylesheets/bootstrap-dropdownhover.min.css")
+    link(rel="stylesheet" href="stylesheets/styles.css")
+    title #{title}
+    style.
+      .mybtn-success{
+        .btn-success {
+          color: #fff;
+            background-color: #218838;
+          border-color: #1e7e34
+        }
+
+        .btn-success:hover {
+          color: #fff;
+          background-color: #218838;
+          border-color: #1e7e34;
+        }
+      }
+  body
+    // Navigation
+    nav.navbar.navbar-expand-lg.navbar-light.bg-nav.fixed-top
+      .container
+        // <span><img src="images/3.jpg" alt="" style="height: 23px;"></span>
+        a.navbar-brand(href="index" style="color: teal;")
+          strong Junior Baby Center
+        button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation")
+          span.navbar-toggler-icon
+        .container
+          a.nav-link(href="" style="font-size:15px; color: green;")
+            i.fa.fa-phone
+            b +256753613293
+        #navbarResponsive.collapse.navbar-collapse.nav-tabs
+          ul.navbar-nav.ml-auto
+            // <li class="nav-item">+256753613293</li>
+            li.nav-item
+              a.nav-link.ba(href="index" style="font-size: 17px; color: teal;")
+                b Home
+                // <span class="sr-only">(current)</span>
+            li.nav-item.active
+              a.nav-link.active(href="about" style="font-size: 17px; color: green;")
+                b  About
+          
+            li.nav-item
+              a.nav-link(href="parents" style="font-size: 17px; color: teal;")
+                b Parents
+            li.nav-item
+              a.nav-link(href="babysitter" style="font-size: 17px; color: teal;")
+                b Babysitters
+            li.nav-item
+              a.nav-link(href="register" style="font-size: 17px; color: teal;")
+                b Register
+              
+        // main content of the body goes here
+        br
+        br
+    .aboutus-section
+      br
+      .container
+        .row
+          .col-md-3.col-sm-6.col-xs-12
+            .aboutus
+              h2.aboutus-title About Us
+              p.aboutus-text
+                //- | Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga
+                //- | voluptatem modi, natus veritatis delectus doloremque .
+              p.aboutus-text
+                |Founded in 2004 by a group of four mothers, seekingSitters began as a safety and convience solution to the child care delimma. 
+              a.aboutus-more(href="#details") read more
+          .col-md-3.col-sm-6.col-xs-12
+            .aboutus-banner
+              img(src="images/e.jpg" alt="" style="height: 340px; padding-top: 60px")
+          .col-md-5.col-sm-6.col-xs-12
+            .feature
+              .feature-box
+                .clearfix
+                  .iconset
+                    span.glyphicon.glyphicon-cog.icon
+                  .feature-content
+                    h4 Team working for you
+                    p
+                      | Since that time SeekingSitters has grown into so much more, becoming a integral part of your family's total child care solution plan. We grow with your family, we personally work for you.
+              .feature-box
+                .clearfix
+                  .iconset
+                    span.glyphicon.glyphicon-cog.icon
+                  .feature-content
+                    h4 Reliable services
+                    p
+                      |Are you looking for a babysitter? JBC has a large overview of babysitters, with 50 of them currently available matching your search criteria. Contact us now to find a great nanny to care for your child(ren) in no time!
+              .feature-box
+                .clearfix
+                  .iconset
+                    span.glyphicon.glyphicon-cog.icon
+                  .feature-content
+                    h4 Great support
+                    p
+                      | We provide on-site childcare for Weddings, Engagement Parties, Special Events, Conferences and Seminars.  This service is available at your home, in the hotel room, banquet hall wherever the event takes place.
+    #accordion-style-1.container-fluid.bg-gray
+      .container
+        section
+          .row
+            .col-12
+              h1.text-green.mb-4.text-center Clubs offered at Junior Baby Center
+            .col-10.mx-auto
+              #accordionExample.accordion
+                .card
+                  #headingOne.card-header
+                    h5.mb-0
+                      button.btn.btn-link.btn-block.text-left(type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne")
+                        i.fa.fa-amazon.main
+                        i.fa.fa-angle-double-right.mr-3
+                        | Morning club. 
+                        span
+                          | Lorem
+                          | ipsum dolor sit amet consectetur, adipisicing elit.
+                  #collapseOne.collapse.fade(aria-labelledby="headingOne" data-parent="#accordionExample")
+                    .card-body
+                      h4 Billing details
+                      | Each child is paying 8500/= per two hours.
+                      |                                         ex praesentium eum porro
+                      |                                         placeat. Iure, sapiente cupiditate maxime rerum ipsa dolorum?
+                .card
+                  #headingTwo.card-header
+                    h5.mb-0
+                      button.btn.btn-link.collapsed.btn-block.text-left(type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo")
+                        i.fa.fa-plus.main
+                        i.fa.fa-angle-double-right.mr-3
+                        | Afternoon Club. 
+                        span
+                          | Lorem
+                          | ipsum dolor sit amet consectetur, adipisicing elit.
+                  #collapseTwo.collapse.fade(aria-labelledby="headingTwo" data-parent="#accordionExample")
+                    .card-body
+                      h4 Billing details
+                      |                                    Each child is paying 8500/= per two hours.
+                      |                                        ceat magni dolores qui et quidem excepturi accusamus!
+                .card
+                  #headingThree.card-header
+                    h5.mb-0
+                      button.btn.btn-link.collapsed.btn-block.text-left(type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree")
+                        i.fa.fa-expeditedssl.main
+                        i.fa.fa-angle-double-right.mr-3
+                        | Evening club. 
+                        span
+                          | Lorem
+                          | ipsum dolor sit amet consectetur, adipisicing elit.
+                  #collapseThree.collapse.fade(aria-labelledby="headingThree" data-parent="#accordionExample")
+                    .card-body
+                      h4 Billing details
+                      |                                         Each child is paying 8500/= per two hours.
+                      |                                         
+                .card
+                  #headingFour.card-header
+                    h5.mb-0
+                      button.btn.btn-link.collapsed.btn-block.text-left(type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour")
+                        i.fa.fa-envelope.main
+                        i.fa.fa-angle-double-right.mr-3
+                        | Night club. 
+                        //- span
+                        //-   | Lorem ipsum
+                        //-   | dolor sit amet consectetur, adipisicing elit.
+                  #collapseFour.collapse.fade(aria-labelledby="headingFour" data-parent="#accordionExample")
+                    .card-body
+                      h4 Billing details
+                      |                                         Each child is paying 12000/= per two hours.
+                      |                                        
+    #details.details.center
+      .container
+        .row
+          .col-md-6
+            .cnt
+              h3(style="color: white; font-weight: 700;")
+                | Helping Parents
+              p(style="color: white;")
+                | Lorem ipsum dolor sit amet conse ctetur adipisicing elitdo eiusmod tempo. Praesent justo
+                | dolor, lobortis quis, lobortis dignissim, pulvinar ac, lorem. Vestibulum sed ante. Donec
+                | sagittis euismod purus.
+            .col
+              ul.marked-list
+                li
+                  a(href="#")  Fusce euismod consequat ante
+                li
+                  a(href="#")  Lorem ipsum dolor sit amet, consectetuer adipiscing elit
+                li
+                  a(href="#")  Pellentesque sed dolor
+                li
+                  a(href="#")  Aliquam congue fermentum nisl accumsan nulla vel diam
+                li
+                  a(href="#")  Sed in lacus ut enim adipiscing aliquet
+          .col-md-6
+            .cnt
+              h3(style="color: white; font-weight: 700;")
+                | Childcare Providers
+              p(style="color: white")
+                | Lorem ipsum dolor sit amet conse ctetur adipisicing elitdo eiusmod tempo. Praesent justo
+                | dolor, lobortis quis, lobortis dignissim, pulvinar ac, lorem. Vestibulum sed ante. Donec
+                | sagittis euismod purus.
+            .col
+              ul.marked-list
+                li
+                  a(href="#")  Fusce euismod consequat ante
+                li
+                  a(href="#")  Lorem ipsum dolor sit amet, consectetuer adipiscing elit
+                li
+                  a(href="#")  Pellentesque sed dolor
+                li
+                  a(href="#")  Aliquam congue fermentum nisl accumsan nulla vel diam
+                li
+                  a(href="#")  Sed in lacus ut enim adipiscing aliquet
+    footer.container.py-5(style="color: whitesmoke;")
+      .row
+        .col-6.col-md
+          h5(style="color: teal;") Admin use
+          ul.list-unstyled.text-small
+            li
+              a.text-muted(href="#")
+                button.btn.btn-primary Checkin
+        .col-6.col-md
+          h5(style="color: teal;") Help & advice
+          ul.list-unstyled.text-small
+            li
+              a.text-muted(href="#") FAQs
+            li
+              a.text-muted(href="#") Safety Center
+            li
+              a.text-muted(href="#") More info guides
+        .col-6.col-md
+          h5(style="color: teal;") Search tips
+          ul.list-unstyled.text-small
+            li
+              a.text-muted(href="#") Finding the right baby sitter
+            li
+              a.text-muted(href="#") Hiring a nanny
+            li
+              a.text-muted(href="#") Nanny contacts
+        .col-6.col-md
+          h5(style="color: teal;") About
+          ul.list-unstyled.text-small
+            li
+              a.text-muted(href="#") Locations
+            li
+              a.text-muted(href="#") Privacy
+            li
+              a.text-muted(href="#") Terms
+        p.float-right
+          a(href="#" style="color: green; font-size: 10px;")
+            button.btn.btn-success Back to top
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js")
+    script(src="js/bootstrap-dropdownhover.min.js")
+    script(src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous")
+    script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous")
+    script(src="js/bootstrap.bundle.js")

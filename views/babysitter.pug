@@ -1,0 +1,158 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible" content="ie=edge")
+    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css")
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js")
+    script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js")
+    link(rel="stylesheet" href="stylesheets/bootstrap.css")
+    link(rel="stylesheet" href="stylesheets/bootstrap-dropdownhover.min.css")
+    link(rel="stylesheet" href="stylesheets/styles.css")
+    title #{title}
+  body
+    // Navigation
+    nav.navbar.navbar-expand-lg.navbar-light.bg-nav.fixed-top
+      .container
+        // <span><img src="images/3.jpg" alt="" style="height: 23px;"></span>
+        a.navbar-brand(href="index" style="color: teal;")
+          strong Junior Baby Center
+        button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation")
+          span.navbar-toggler-icon
+        .container
+          a.nav-link(href="" style="font-size:15px; color: green;")
+            i.fa.fa-phone
+            b +256753613293
+        #navbarResponsive.collapse.navbar-collapse.nav-tabs
+          ul.navbar-nav.ml-auto
+            // <li class="nav-item">+256753613293</li>
+            li.nav-item
+              a.nav-link.ba(href="index" style="font-size: 17px; color: teal;")
+                b Home
+                // <span class="sr-only">(current)</span>
+            li.nav-item
+              a.nav-link(href="about" style="font-size: 17px; color: teal;")
+                b  About
+          
+            li.nav-item
+              a.nav-link(href="parents" style="font-size: 17px; color: teal;")
+                b Parents
+            li.nav-item.active
+              a.nav-link.active(href="babysitter" style="font-size: 17px; color: green;")
+                b Babysitters
+            li.nav-item
+              a.nav-link(href="register" style="font-size: 17px; color: teal;")
+                b Register
+              
+        // main content of the body goes here
+        br
+        br
+    section.well.well1.well1_ins
+      br
+      br
+      .container
+        .row
+          .col-md-4.wow.fadeInLeft.animated(data-wow-duration="2s" style="visibility: visible; animation-duration: 2s; animation-name: fadeInLeft;")
+            a.thumb.obj3(href="images/page-4_img1_original.jpg")
+              img.obj3(src="images/4.jpg" alt="")
+              span.thumb_overlay.obj3
+          .col-md-8.center.wow.fadeIn.animated.g8(data-wow-duration="2s" style="visibility: visible; animation-duration: 2s; animation-name: fadeIn; text-align: center; background-color: whitesmoke;")
+            h3(style="color: teal; font-weight: 700; ")
+              | Become a ababy sitter
+            p.text-sets2.ins1(style="color: black;")
+              |Many babysitters have already signed up!
+              br
+              |Babysitting job wanted? Many babysitters have already signed up to Babysits for free. Join them in creating your free profile and get contacted by parents in your area. Finding babysitting jobs has never been so easy.
+            p(style="color: black;")
+              | Embrace the opportunity to be your own boss and sit for families right in your own neighborhood. Set your own rate and schedule, update your availability on the go, and earn money for the things you want.
+            a.btn.btn3.btn_hover_clr2.btn-success(href="#") Learn More
+    section.well.well1_ins.center.babysitters(style="background-color: whitesmoke;")
+      .container
+        h3(style="color: black; font-size: 700; text-decoration: underline gray;") Our Babysitters
+        br
+        .row.row_offs.wow.fadeInUp.animated(data-wow-duration="2.5s" style="visibility: visible; animation-duration: 2.5s; animation-name: fadeInUp;")
+          .col-md-4
+            .block1(style="width: 300px;")
+              a.thumb.obj3(data-fancybox-group="1" href="images/page-3_img1_original.jpg")
+                img.obj3.offs1(src="images/G.jpg" alt="")
+                span.thumb_overlay.obj3
+              h4
+                a.hover_clr2(href="#" style="color: green;")
+                  | John Johntel
+                  br
+                  span refactory
+              p.offs5(style="color: #808080;")
+                | has 3 yrs experience in handling children 
+                | always reliable .
+          .col-md-4
+            .block1(style="width: 300px;")
+              a.thumb.obj3(data-fancybox-group="1" href="images/page-3_img1_original.jpg")
+                img.obj3.offs1(src="images/G.jpg" alt="")
+                span.thumb_overlay.obj3
+              h4
+                a.hover_clr3(href="#" style="color: green;")
+                  | John Johntel
+                  br
+                  span refactory
+              p.offs5(style="color: #808080;")
+                | has 3 yrs experience in handling children 
+                | always reliable .
+          .col-md-4
+            .block1(style="width: 300px;")
+              a.thumb.obj3(data-fancybox-group="1" href="images/page-3_img1_original.jpg")
+                img.obj3.offs1(src="images/G.jpg" alt="")
+                span.thumb_overlay.obj3
+              h4
+                a.hover_clr2(href="#" style="color: green;")
+                  | John Johntel
+                  br
+                  span refactory
+              p.offs5(style="color: #808080;")
+                | has 3 yrs experience in handling children 
+                | always reliable .
+    footer.container.py-5(style="color: whitesmoke;")
+      .row
+        .col-6.col-md
+          h5(style="color: teal;") Admin use
+          ul.list-unstyled.text-small
+            li
+              a.text-muted(href="#")
+                button.btn.btn-primary Checkin
+        .col-6.col-md
+          h5(style="color: teal;") Help & advice
+          ul.list-unstyled.text-small
+            li
+              a.text-muted(href="#") FAQs
+            li
+              a.text-muted(href="#") Safety Center
+            li
+              a.text-muted(href="#") More info guides
+        .col-6.col-md
+          h5(style="color: teal;") Search tips
+          ul.list-unstyled.text-small
+            li
+              a.text-muted(href="#") Finding the right baby sitter
+            li
+              a.text-muted(href="#") Hiring a nanny
+            li
+              a.text-muted(href="#") Nanny contacts
+        .col-6.col-md
+          h5(style="color: teal;") About
+          ul.list-unstyled.text-small
+            li
+              a.text-muted(href="#") Locations
+            li
+              a.text-muted(href="#") Privacy
+            li
+              a.text-muted(href="#") Terms
+        p.float-right
+          a(href="#" style="color: green; font-size: 10px;")
+            button.btn.btn-success Back to top
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js")
+    script(src="js/bootstrap-dropdownhover.min.js")
+    script(src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous")
+    script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous")
+    script(src="js/bootstrap.bundle.js")
