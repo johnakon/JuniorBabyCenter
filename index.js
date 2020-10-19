@@ -4,7 +4,6 @@ const bodyParser = require('body-parser');
 const path = require('path');
 const mongodb = require('mongodb');
 // const bcryptjs = require("bcryptjs");
-const path = require('path');
 
 const app = express();
 

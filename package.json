@@ -4,7 +4,8 @@
   "description": "Junior Baby Center",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js",
+    "start": "node index.js",
+    "server": "nodemon index.js",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm run build"
   },
   "author": "Akonya John",
