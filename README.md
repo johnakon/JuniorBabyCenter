@@ -16,7 +16,7 @@
 - Database  ->  Monogodb
 - HTML | CSS | Pug
 
-
+#### ` - To test it out - simply clone the repository, then npm install, and npm start - it runs on port 5000.`
 
 ### `Currently...`
 - Redesigning the user interface 
