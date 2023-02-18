@@ -11,10 +11,10 @@
 
 - Also, Junior Bbay Center aims at providing "part-time" baby sitters. Typically parents do not need to hire a full time baby sitter to take care of their children since the parent will still come home after work. Junior Baby Center provides a platform on which a baby sitter can be contacted to take care of the babies (and) or young children just for a few hours when the parents are either away or busy.
 
-### `Tools used:`
+### `Tools in use:`
 - Javascript  | Reactjs
 - Database  ->  Monogodb
-- HTML | CSS
+- HTML | CSS | Pug
 
 
 
