@@ -1,7 +1,6 @@
 #                                                      Junior Baby Center (JBC)
 
-![](public/images/jbc.png)
-![Alt text](public/images/jbc.png)
+![main page](images/jbc.png)
 
 ## `What is Junior Baby Center?`
 - Junior Baby Center [JBC] - is a website intended for hiring baby sitters (or nannies) to take care of young children! This is mainly the front end but currently adding in the backend.
