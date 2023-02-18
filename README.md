@@ -3,38 +3,22 @@
 ![](public/images/jbc.png)
 
 ## `What is Junior Baby Center?`
-- Это проект, который намерен предоставить онлайн-платформу для покупки и продажи автомобилей!
-#### ` - Сайт находится в стадии разработки и может не полностью реагировать на все устройства.`
+- Junior Baby Center [JBC] - is a website intended for hiring baby sitters (or nannies) to take care of young children! This is mainly the front end but currently adding in the backend.
+#### ` - The  site is still in developement mode. Restructuring the user interface.`
 
-## Какую проблему решает Helpavto?
-- Легкость, с которой автомобили можно продавать и покупать в Интернете.
+## Which problem does Junior Baby Center solve?
+- Usually, Parents leave home and go for work early in the morning and have babies (young children) to be taken care of. Sometimes a parent may hire a baby sitter or nanny but recently it has been hard to find good baby sitters who can be trusted.  That is where Junior Baby Center comes in - to provide a trust worthy platform from where babby good sitters can be can be contacted to take care of babies or children.
 
-### `Инструменты:`
-- Javascript | Next.js   | Reactjs
-- Database    | Monogodb
+- Also, Junior Bbay Center aims at providing "part-time" baby sitters. Typically parents do not need to hire a full time baby sitter to take care of their children since the parent will still come home after work. Junior Baby Center provides a platform on which a baby sitter can be contacted to take care of the babies (and) or young children just for a few hours when the parents are either away or busy.
+
+### `Tools used:`
+- Javascript  | Reactjs
+- Database  ->  Monogodb
 - HTML | CSS
 
-### `Настройка разработчика:`
-- Разветвить этот репозиторий
-```bash
-git clone <repository>
-cd папка репозитория/
-```
-- Установка и начало работы
-    - Windows / Linux / Mac
-    ```
-    Запустите npm install, чтобы установить необходимый пакет.
-    ```
-    - Убедитесь, что у вас нет ошибок после запуска npm install.
-    ```
-    Обратите внимание на пакеты, которые вы устанавливаете (версии)
-    ```
-    ### `npm run dev`
 
 
-- Если по какой-либо причине вы получите какие-либо ошибки после выполнения приведенной выше команды,
-    - возможные решения
-    - Удалите файл package-lock.json вместе с папками .next и node_modules.
-- Снова запустите проект с помощью bash / cmd
-    - Снова запустите проект с помощью bash / cmd
-        ### `npm run dev`
+### `Currently...`
+- Redesigning the user interface 
+    - Using Figma to for wireframing and mockups
+- Assessing user feddback from research conducted
